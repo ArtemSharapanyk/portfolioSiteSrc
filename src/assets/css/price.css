@@ -1,0 +1,19 @@
+.price .btnCalc{
+    color: #fff;
+    border: 2px solid #fff;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    cursor: pointer;
+    transition: .4s all ease-in-out
+}
+.price .desc{
+    width: 70%;
+}
+.price .btnCalc:hover{
+    background-color: #fff;
+    color: #000;
+}

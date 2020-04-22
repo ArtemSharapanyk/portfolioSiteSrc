@@ -1,0 +1,145 @@
+@media screen and (max-width: 5000px){
+    .calculatorOfPrice{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width: 4200px){
+    .calculatorOfPrice{
+        font-size: 3.5em;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 500px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 3700px){
+    .calculatorOfPrice .block{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 3500px){
+    .calculatorOfPrice .calcBtnControl{
+        width: 450px;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 3000px){
+    .calculatorOfPrice{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 2500px){
+    .calculatorOfPrice{
+        font-size: 2.5em;
+    }
+    .calculatorOfPrice .checkbox, .calculatorOfPrice .miniBlock input[type="text"]{
+        width: 50px !important;
+    }
+    .calculatorOfPrice .checkbox{
+        height: 50px !important;
+    }
+    .calculatorOfPrice .radio{
+        width: 40px !important;
+        height: 40px !important; 
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 350px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 2000px){
+    .calculatorOfPrice{
+        font-size: 2em;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 250px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 1600px){
+    .calculatorOfPrice .checkbox, .calculatorOfPrice .miniBlock input[type="text"]{
+        width: 35px !important;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 200px;
+        height: 50px;
+    }
+    .calculatorOfPrice{
+        font-size: 1.5em;
+    }
+    .calculatorOfPrice .checkbox{
+        height: 35px !important;
+    }
+    .calculatorOfPrice .radio{
+        width: 25px !important;
+        height: 25px !important; 
+    }
+}
+@media screen and (max-width: 1300px){
+    .calculatorOfPrice .checkbox, .calculatorOfPrice .miniBlock input[type="text"]{
+        width: 25px !important;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 150px;
+        height: 40px;
+    }
+    .calculatorOfPrice{
+        font-size: 1em;
+    }
+    .calculatorOfPrice .checkbox{
+        height: 25px !important;
+    }
+    .calculatorOfPrice .radio{
+        width: 20px !important;
+        height: 20px !important; 
+    }
+    .calculatorOfPrice .radioBlock label{
+        margin-left: 10px !important;
+    }
+    .calculatorOfPrice .radioBlock{
+        margin-top: 0 !important;
+    }
+}
+@media screen and (max-width: 1024px){
+    .itemsBox{
+        margin-top: 0 !important;
+    }
+    .mbOpt{
+        width: 100% !important;
+    }
+    .mbOpt .miniBlock{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .mbOpt .miniBlock {
+        width: 100% !important;
+    }
+    .mbOpt .itemsBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .calculatorOfPrice select{
+        width: 80% !important;
+    }
+}
+@media screen and (max-width: 700px){
+    .calculatorOfPrice{
+        position: fixed !important;
+        height: 100%;
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 400px){
+    .bagMobile{
+        align-items: flex-start !important;
+    }
+    .bagMobile .itemsBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bagMobile .itemsBox .miniBlock{
+        width: 100% !important;
+    }
+}

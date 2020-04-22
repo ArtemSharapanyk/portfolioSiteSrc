@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio| Hasker</title>
+    <style>
+      .loader{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #222126;
+        z-index: 100000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s all ease-in-out;
+      }
+      .hideLoader{
+        opacity: 0 !important;
+        pointer-events: none;
+      }
+      .container{
+        width: 112px;
+        height: 112px;
+      }
+      .box1, .box2, .box3{
+        border: 16px solid #f5f5f5;
+        box-sizing: border-box;
+        position: absolute;
+        display: block;
+      }
+      .box1{
+        width: 112px;
+        height: 48px;
+        margin-top: 64px;
+        margin-left: 0px;
+        animation: anime1 4s 0s forwards ease-in-out infinite;
+      }
+      .box2{
+        width: 48px;
+        height: 48px;
+        margin-top: 0;
+        margin-left: 0px;
+        animation: anime2 4s 0s forwards ease-in-out infinite;
+      }
+      .box3{
+        width: 48px;
+        height: 48px;
+        margin-top: 0px;
+        margin-left: 64px;
+        animation: anime3 4s 0s forwards ease-in-out infinite;
+      }
+      @keyframes anime1{
+        0%{
+          width: 112px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 0px;
+        }
+         
+        12.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 0px;
+        }
+          
+        25%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 0px;
+        }
+          
+        37.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 0px;
+        }
+          
+        50%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 0px;
+        }
+          
+        62.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 0px;
+        }
+          
+        75%{
+          width: 48px;
+          height: 112px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        87.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+          
+        100%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+      }
+  
+    
+    
+      @keyframes anime2{
+        0%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+          
+        12.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+        25%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+          
+        37.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+          
+        50%{
+          width: 112px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 0px;
+        }
+          
+        62.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 64px;
+        }
+          
+        75%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 64px;
+        }
+          
+        87.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 64px;
+        }
+          
+        100%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 64px;
+        }
+          
+      }
+        
+          
+      @keyframes anime3{
+        0%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 64px;
+        }
+          
+        12.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 0px;
+          margin-left: 64px;
+        }
+          
+        25%{
+          width: 48px;
+          height: 112px;
+          margin-top: 0px;
+          margin-left: 64px;
+        }
+          
+        37.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 64px;
+        }
+        50%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 64px;
+        }
+          
+        62.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 64px;
+        }
+          
+        75%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 64px;
+        }
+          
+        87.5%{
+          width: 48px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 64px;
+        }
+          
+        100%{
+          width: 112px;
+          height: 48px;
+          margin-top: 64px;
+          margin-left: 0px;
+        }
+          
+    
+      }
+        
+
+    
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+    </div>
+    <div class="preview">
+      <div class="typewriter">
+        Я создаю потрясающие сайты, тем самым улучшая веб-индустрию
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li class="animateEl"><a>обо мне.</a></li>
+        <li class="animateEl"><a>навыки.</a></li>
+        <li class="animateEl"><a>контакты.</a></li>
+        <li class="animateEl"><a>цена.</a></li>
+        <li class="animateEl"><a rel="noreferrer" href="https://sharapanykartemportfolio.github.io/" target="_blank">портфолио.</a></li>
+      </ul>
+    </nav>
+   
+    <header class="uiControls uiText">
+      <div class="logo animateUi animateEl mobUi">
+        hasker
+      </div>
+      <div class="toggleBtn animateUi animateEl mobUi">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </header>
+    <div class="contentSlider">
+      <div class="slide about" id="about">
+        <div class="title animateEl mobUi">
+          обо мне.
+        </div>
+        <div class="content animateEl mobUi">
+          <div class="description">
+            <p class="desc">
+                Не имеет значение кто вы, и кто я, но имеет значение знать как качественно я выполняю свою работу.
+            </p>
+            <p class="desc">
+                Перед вами перспективный фронтенд разработчик, с большими целями, к которым он медленно, но уверенно идёт.Мое желание быть лучшим не позволяет выполнять работу халатно, что позволяет вам не иметь лишних проблем с дальнейшей поддержкой проекта и самим качеством исполнения.
+            </p>
+          </div>
+          <div class="photo" style="background: url('/assets/img/forportfolio.png') center top; background-size: cover;"></div>
+        </div>  
+      </div>
+      <div class="slide skills" id="skills">
+        <div class="title animateEl mobUi">
+          навыки.
+        </div>
+        <div class="content animateEl mobUi">
+          <div class="block">
+            <div class="cardWrap">
+              <div class="card">
+                <div class="circle">
+                  60
+                </div>
+                <div class="technology">
+                  Javascript
+                </div>
+              </div>
+              <div class="card">
+                <div class="circle">
+                  70
+                </div>
+                <div class="technology">
+                  Css
+                </div>
+              </div>
+              <div class="card">
+                <div class="circle">
+                  90
+                </div>
+                <div class="technology">
+                  Html
+                </div>
+              </div>
+            </div>
+            <div class="description">
+              Другие <span>технологии</span>,которые я использую.
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="slide contact" id="contact">
+        <div class="title animateEl mobUi">
+          контакты.
+        </div>
+        <div class="content animateEl mobUi">
+          <div class="description">
+            <p class="desc">
+                Жизнь всегда нас ставит перед выбором, который в свою очередь несёт свои последствия, в нашем случае, последствия всегда позитивные.Есть сомнения? Испытайте меня!
+            </p>
+          </div>
+          <div class="wrap">
+            <ul class="socialBox">
+              <li class="socialItems instagram">
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/_chiza777/"></a>
+              </li>
+              <li class="socialItems telegram">
+                <a target="_blank" rel="noreferrer" href="https://t.me/ArtemSharapanykWeb"></a>
+              </li>
+              <li class="socialItems github">
+                <a target="_blank" rel="noreferrer" href="https://github.com/ArtemSharapanyk"></a>
+              </li>
+              <li class="socialItems linkedIn">
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/artemsharapanyk"></a>
+              </li>
+            </ul>
+            <h2><a href="tel:+380973804996">скажи привет 👋</a></h2>
+          </div>
+        </div>  
+      </div>
+      <div class="slide price" id="price">
+        <div class="title animateEl mobUi">
+          цена.
+        </div>
+        <div class="content animateEl mobUi">
+          <div class="description">
+            <p class="desc">
+              Не уверены сможете ли Вы позволить себе мои услуги?Узнать приблизительную цену  можно здесь.
+            </p>
+          </div>
+          <div class="btnCalc">
+            посчитать
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div class="calculatorOfPrice">
+      <div class="previewSlide calcSlide">
+        <div class="text animateEl">
+            Цена подобрана исключительно приблизительно, основываясь на среднюю сложность элементов страницы, только осмотрев реальный макет, я могу сказать реальную цену и сроки.
+        </div>
+        <div class="calcBtnControl animateEl">
+          Понимаю
+        </div>
+      </div>
+      <div class="calcSlide flex">
+        <select name="typeOfSite" class="typeOfSite animateEl flex">
+          <option value="none">Тип сайта</option>
+          <option value="landing">Landing page</option>
+          <option value="wpSite">Wordpress website(blog/shop)</option>
+          <option value="multiple">Multiple pages website</option>
+        </select>
+        <div class="calcBtnControl animateEl">
+          Вперед
+        </div>
+      </div>
+      <div class="calcSlide flex bagMobile">
+        <div class="block animateEl">
+          <div class="question">
+            Ваш сайт имеет:  
+          </div>
+          <div class="itemsBox">
+            <div class="miniBlock">
+              <input type="checkbox" id="navigation">
+              <div class="checkbox"></div>
+              <label for="navigation">Навигация</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="form">
+              <div class="checkbox"></div>
+              <label for="form">Форма связи</label>
+            </div>
+            <div class="miniBlock">
+              <input type="text" id="sections">
+              <label for="sections">секции</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="sliders">
+              <div class="checkbox"></div>
+              <label for="sliders">слайдеры</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="poup">
+              <div class="checkbox"></div>
+              <label for="poup">модальные окна</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="accordions">
+              <div class="checkbox"></div>
+              <label for="accordions">аккордеоны</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="tabs">
+              <div class="checkbox"></div>
+              <label for="tabs">табы</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="animations">
+              <div class="checkbox"></div>
+              <label for="animations">анимации</label>
+            </div>
+          </div>
+        </div>
+        <div class="calcBtnControl animateEl">
+          Вперед
+        </div>
+      </div>
+      <div class="calcSlide flex">
+         <div class="block animateEl">
+          <div class="question">
+            Отзывчивость: 
+          </div>
+          <div class="miniBlock radioBlock">
+            <div class="blockWrap flex">
+              <input type="radio" id="radioResponse" name="responsive" value="5">
+              <div class="radio"></div>
+              <label for="radioResponse">да</label>
+            </div>
+            <div class="blockWrap flex ml">
+              <input type="radio" id="radioResponseNo" name="responsive" value="5">
+              <div class="radio"></div>
+              <label for="radioResponseNo">нет</label>
+            </div>
+          </div>
+          <div class="question">
+            Приоритетное устройство: 
+          </div>
+          <div class="miniBlock radioBlock">
+            <div class="blockWrap flex">
+              <input type="radio" id="radioMobile" name="device" value="5">
+              <div class="radio"></div>
+              <label for="radioMobile">смартфон</label>
+            </div>
+            <div class="blockWrap flex ml">
+              <input type="radio" id="radioDesktop" name="device" value="0">
+              <div class="radio"></div>
+              <label for="radioDesktop">компьютер</label>
+            </div>
+          </div>
+          <div class="question">
+            Оптимизация под большие разрешения: 
+          </div>
+          <div class="miniBlock radioBlock">
+            <div class="blockWrap flex">
+              <input type="radio" id="radioScreenOpt" name="screenOpt" value="5">
+              <div class="radio"></div>
+              <label for="radioScreenOpt">да</label>
+            </div>
+            <div class="blockWrap flex ml">
+              <input type="radio" id="radioScreenOptNo" name="screenOpt" value="0">
+              <div class="radio"></div>
+              <label for="radioScreenOptNo">нет</label>
+            </div>
+        </div>
+       </div>
+       <div class="calcBtnControl animateEl">
+        Вперед
+       </div>
+      </div>
+      <div class="flex animations animationSlide">
+        <div class="block animateEl mbOpt">
+          <div class="question">
+            Тип анимации/й:
+          </div>
+          <div class="itemsBox">
+            <div class="miniBlock">
+              <input type="checkbox" id="animationPageOnScroll">
+              <div class="checkbox"></div>
+              <label for="animationPageOnScroll">при прокрутке</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="animationPageLoad">
+              <div class="checkbox"></div>
+              <label for="animationPageLoad">после загрузки страницы</label>
+            </div>
+            <div class="miniBlock">
+              <input type="checkbox" id="animationHoverClick">
+              <div class="checkbox"></div>
+              <label for="animationHoverClick">при наведении/нажатии</label>
+            </div>
+          </div>
+        </div>
+        <div class="calcBtnControl animateEl">
+          Вперед
+        </div>
+      </div>
+      <div class="flex landingSlide">
+        <div class="block animateEl">
+          <div class="question">
+            Вид дизайна:
+          </div>
+          <div class="miniBlock radioBlock">
+            <div class="blockWrap flex">
+              <input type="radio" id="normalDesign" name="typeDesign" value="0">
+              <div class="radio"></div>
+              <label for="normalDesign">стандартный</label>
+            </div>
+            <div class="blockWrap flex ml">
+              <input type="radio" id="SliderSiteDesign" name="typeDesign" value="15">
+              <div class="radio"></div>
+              <label for="SliderSiteDesign">слайдер</label>
+            </div>
+          </div>
+        </div>
+        <div class="calcBtnControl animateEl">
+          Вперед
+        </div>
+      </div>
+      <div class="finally calcSlide">
+        <div class="text animateEl">
+            Я составляю цену исключительно от  элементов, которые вы хотите видеть на вашей странице.
+        </div>
+        <div class="calcBtnControl animateEl scorePrice">
+            Посчитать
+        </div>
+      </div>
+      <div class="calcSlide">
+        <h2 class="animateEl"></h2>
+        <div class="priceCounter animateEl">
+        </div>
+        <div class="calcBtnControl animateEl">
+          <a href="https://t.me/ArtemSharapanykWeb">
+            Зделать заказ
+          </a>
+        </div>
+      </div>
+     </div>
+
+    </div> 
+    <div class="sliderBar uiText">
+      <div class="activeSlides animateEl ">
+        01
+      </div>
+      <div class="Bar">
+        <div class="whiteline"></div>
+      </div>
+      <div class="allSlidesIndex animateEl ">
+        04
+      </div>
+    </div>
+    <div class="tabWrap">
+      <div class="tab">
+        Я использую это для создания структуры сайта.
+      </div>
+      <div class="tab">
+        Я использую это, чтобы придать сайту красивый внешний вид и для созданий анимаций.
+      </div>
+      <div class="tab">
+        Я использую это,чтобы добавить на сайт интерактивность и для написания сложной логики.
+      </div> 
+    </div>
+    <footer class="uiControls">
+      <div class="arrowsBox">
+        <div class="slideTop animateUi animateEl uiBtn footerBtn"></div>
+        <div class="slideBottom animateUi animateEl uiBtn footerBtn"></div>
+      </div>
+      <div class="sparrowUp animateUi animateEl footerBtn"></div>
+    </footer>
+  </body>
+</html>

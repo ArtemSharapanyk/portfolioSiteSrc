@@ -1,0 +1,136 @@
+@media screen and (max-width: 5500px) {
+    .skills .content{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 4500px) {
+    .skills .circle{
+        width: 650px !important;
+        height: 650px !important;
+        border-width: 20px !important;
+    }
+}
+@media screen and (max-width: 3900px) {
+    .skills .circle{
+        width: 600px !important;
+        height: 600px !important;
+    }
+    .tabWrap{
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width: 3500px) {
+    .skills .circle{
+        width: 550px !important;
+        height: 550px !important;
+    }
+}
+@media screen and (max-width: 3000px) {
+    .skills .circle{
+        border-width: 12px !important;
+        width: 450px !important;
+        height: 450px !important;
+    }
+    .tabWrap{
+        font-size: 2.3em;
+    }
+}
+@media screen and (max-width: 2800px) {
+    .skills .circle{
+        border-width: 12px !important;
+        width: 350px !important;
+        height: 350px !important;
+    }
+    .skills .content{
+        font-size: .7em;
+    }
+    .skills .content .block{
+        top: 30%;
+    }
+    .skills .content .block .description{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 2000px) {
+    .skills .circle{
+        width: 250px !important;
+        height: 250px !important;
+        border-width: 8px !important;
+    }
+    .skills .content .block .description{
+        margin-top: 30px;
+    }
+    .skills .content{
+        font-size: .6em;
+    }
+    .tabWrap{
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .skills .circle{
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .tabWrap{
+        font-size: 1em;
+    }
+    .skills .content .block .description{
+        margin-top: 15px;
+    }
+    .skills .block{
+        position: static;
+        transform: translate(0, 0);
+    }
+    
+}
+@media screen and (max-width: 1316px) and (height: 529px ) {
+    .skills .title{
+        margin-bottom: 50px !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .tabWrap{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 850px) {
+    .skills .circle{
+        width: 150px !important;
+        height: 150px !important;
+        border-width: 3px !important;
+    }
+
+    .skills .block{
+        position: absolute !important;
+        top: 6% !important;
+    } 
+}
+@media screen and (max-width: 700px) {
+    .skills .block{
+        position: static !important;
+    } 
+}
+@media screen and (max-width: 500px) {
+    .skills .cardWrap{
+        flex-direction: column;
+    } 
+    .skills .technology{
+        margin-top: 10px !important;
+    }
+    .skills .cardWrap .card{
+        margin-bottom: 10px;
+    }
+    .skills .circle{
+        width: 200px !important;
+        height: 200px !important; 
+    }
+    .skills .content{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 350px) {
+    .skills .content{
+        font-size: .7em;
+    }
+}

@@ -1,0 +1,147 @@
+@media screen and (max-width: 5000px) {
+    .typewriter{
+        font-size: .9em;
+    }
+}
+@media screen and (max-width:4400px) {
+    .typewriter{
+        font-size: .85em;
+    }
+}
+@media screen and (max-width:4200px) {
+    .typewriter{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width:3900px) {
+    .typewriter{
+        font-size: .75em;
+    }
+}
+@media screen and (max-width:3900px) {
+    .typewriter{
+        font-size: .75em;
+    }
+}
+@media screen and (max-width:3700px) {
+    .typewriter{
+        font-size: .7em;
+    }
+}
+@media screen and (max-width:3450px) {
+    .typewriter{
+        font-size: .65em;
+    }
+}
+@media screen and (max-width:3200px) {
+    .typewriter{
+        font-size: .6em;
+    }
+}
+@media screen and (max-width:2950px) {
+    .typewriter{
+        font-size: .55em;
+    }
+}
+@media screen and (max-width:2700px) {
+    .typewriter{
+        font-size: .5em;
+    }
+}
+@media screen and (max-width:2480px) {
+    .typewriter{
+        font-size: .48em;
+    }
+}
+
+@media screen and (max-width:2370px) {
+    .typewriter{
+        font-size: .44em;
+    }
+}
+@media screen and (max-width:2180px) {
+    .typewriter{
+        font-size: .4em;
+    }
+}
+@media screen and (max-width:1980px) {
+    .typewriter{
+        font-size: .35em;
+    }
+}
+@media screen and (max-width:1740px) {
+    .typewriter{
+        font-size: .3em;
+    }
+}
+@media screen and (max-width:1490px) {
+    .typewriter{
+        font-size: .25em;
+    }
+}
+@media screen and (max-width:1240px) {
+    .typewriter{
+        font-size: .22em;
+    }
+}
+@media screen and (max-width:1100px) {
+    .typewriter{
+        font-size: .2em;
+    }
+}
+@media screen and (max-width:1010px) {
+    .typewriter{
+        font-size: .18em;
+    }
+}
+@media screen and (max-width:900px) {
+    .typewriter{
+        font-size: .15em;
+    }
+}
+@media screen and (max-width:750px) {
+    @keyframes typeWriter {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 80%;
+        }
+    }
+    @keyframes hideTypeWriter {
+        0%{
+            width: 80%;
+        }
+        100%{
+            width: 0;
+        }
+    }
+}
+@media screen and (max-width:560px) {
+    @keyframes typeWriter {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: 90%;
+        }
+    }
+    @keyframes hideTypeWriter {
+        0%{
+            width: 90%;
+        }
+        100%{
+            width: 0;
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .typewriter{
+        font-size: .12em;
+    }
+}
+@media screen and (max-width:480px) {
+    .typewriter{
+        font-size: .1em;
+    }
+}

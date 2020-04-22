@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px) {
+    .about .photo{
+        width: 300px !important;
+        position: absolute;
+        bottom: 0;
+        right: 0;   
+    }
+}
+@media screen and (max-width: 860px) {
+    .about .description{
+        width: 50% !important;
+    }
+    .about .description .desc{
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .about .photo{
+        position: static !important;
+        height: 300px !important;
+        width: 300px !important;
+    }
+    .about .description{
+        width: 100% !important;
+    }
+    .about .content{
+        flex-direction: column;
+    }
+    .about .description .desc{
+        font-size: 1.1em;
+    }
+}

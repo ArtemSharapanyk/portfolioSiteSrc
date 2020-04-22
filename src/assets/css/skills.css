@@ -1,0 +1,78 @@
+.skills .content .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+}
+.skills .card .circle{
+    width: 800px;
+    height: 800px;
+    border-radius: 100%;
+    border: 30px solid #707070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.skills .card .circle:hover{
+    background-color: #fff;
+    color: #000 !important;
+    transition: .4s all ease-in-out;
+}
+.skills{
+    position: relative !important;
+}
+ .tabWrap{
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    font-size: 5em;
+}
+.skills .description{
+    font-size: 1.4em !important;
+    margin-top: 100px;
+}
+.skills .description span{
+    color: #fff;
+}
+.skills .block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 0;                       
+    transform: translate(0, -50%);
+}
+.skills .block .cardWrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.skills .card .technology{
+    margin-top: 40px;
+}
+ .tab{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+.skills .activeSkill{
+    background-color: #fff !important;
+    color: #000 !important;
+}

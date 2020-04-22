@@ -1,0 +1,188 @@
+.calculatorOfPrice{
+    width: 0;
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000000;
+    background-color: #fff;
+    font-size: 5em;
+}
+.calculatorOfPrice a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000 !important;  
+}
+.calculatorOfPrice .calcSlide{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+    padding: 1.5%;
+} 
+.calculatorOfPrice .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculatorOfPrice .activeCalcSlide{
+    z-index: 10000;
+}
+.calculatorOfPrice .text{
+    width: 70%;
+    color: #a4a3a5;
+}
+.calculatorOfPrice .calcBtnControl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 170px;
+    border: 3px solid #000;
+    position: absolute;
+    bottom: 1.5%;
+    right: 1.5%;
+    transition: .4s all ease-in-out;
+    cursor: pointer;
+}
+
+.calculatorOfPrice .calcBtnControl:hover{
+    color: #fff !important;
+    background-color: #000 ;
+}
+.calculatorOfPrice .calcBtnControl:hover a{
+    color: #fff !important;
+}
+.calculatorOfPrice .block{
+    width: 60%;
+}
+.calculatorOfPrice .block .itemsBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.calculatorOfPrice .block, .calculatorOfPrice .miniBlock{
+    border: 2px solid #a4a3a5;
+    color: #a4a3a5;
+    padding: 1%;
+}
+.calculatorOfPrice .block .miniBlock .checkbox{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #a4a3a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculatorOfPrice .block .radioBlock{
+    border: none;
+    width: 100%;
+    background-color: transparent !important;
+    color: #a4a3a5 !important; 
+    justify-content: flex-start !important;
+}
+.calculatorOfPrice .block .radioBlock label{
+    width: auto;
+    margin-left: 20px;
+}
+.calculatorOfPrice .animationSlide .miniBlock{
+    width: 30%;
+}
+.calculatorOfPrice .block .radio{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #a4a3a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculatorOfPrice .ml{
+    margin-left: 20px;
+}
+.calculatorOfPrice .block .radio::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #a4a3a5;
+}
+.calculatorOfPrice .block input[type="radio"]:checked + .radio::before{
+    width: 50%;
+}
+.calculatorOfPrice .block input[type="radio"]{
+    display: none;
+}
+.calculatorOfPrice .block .miniBlock .checkbox:hover::before{
+    width: 50%;
+}
+.calculatorOfPrice .block .miniBlock .checkbox::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 50%;
+    background-color: #a4a3a5;
+    transition: .2s all ease-in-out;
+}
+.calculatorOfPrice .miniBlock input[type="checkbox"]:checked + .checkbox::before{
+    width: 50%;
+}
+.calculatorOfPrice .miniBlock input[type="text"]{
+    width: 80px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #a4a3a5;
+    font-size: .7em;
+    color: #a4a3a5;
+}
+.calculatorOfPrice .miniBlock input[type="text"]:focus{
+    outline: none;
+}
+.calculatorOfPrice .miniBlock label{
+    width: 90%;
+    cursor: pointer;
+    text-align: right;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.calculatorOfPrice .miniBlock{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+.calculatorOfPrice .miniBlock:hover{
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+.calculatorOfPrice .block .question{
+    font-weight: bold;
+}
+.calculatorOfPrice .block .miniBlock input[type="checkbox"]{
+    display: none;
+}
+.calculatorOfPrice .typeOfSite{
+    width: 40%;
+    padding: 1% 0;
+    color: #a4a3a5;
+    text-align: center;
+    text-align-last: center;
+    border-color: #a4a3a5;
+    background-color: transparent;
+}
+

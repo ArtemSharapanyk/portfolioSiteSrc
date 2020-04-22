@@ -1,0 +1,197 @@
+@media screen and (max-width: 5000px) {
+    header .toggleBtn{
+        width: 70px;
+        height: 70px;
+    }
+    header .toggleBtn span{
+        height: 10px;
+    }
+    footer .footerBtn{
+        width: 80px;
+    }
+    .uiText{
+        font-size: 4em;
+    }
+    nav ul li{
+        font-size: 5em;
+    }
+}
+@media screen and (max-width: 4000px) {
+    .uiText{
+        font-size: 3em;
+    }
+    footer .footerBtn{
+        width: 70px;
+        height: 70px;
+    }
+    nav ul li{
+        font-size: 4em;
+    }
+    .modalWrap .window{
+        font-size: 4em;
+    }
+    .sliderBar .Bar{
+        width: 18px;
+    }
+}
+@media screen and (max-width: 3200px) {
+    .uiText{
+        font-size: 2.5em;
+    }
+    footer .footerBtn{
+        width: 60px;
+        height: 60px;
+    }
+    .modalWrap .window{
+        font-size: 3em;
+    }
+    .sliderBar .Bar{
+        width: 14px;
+    }
+    nav ul li{
+        font-size: 3em;
+    }
+    header .toggleBtn{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 2600px) {
+    footer .footerBtn{
+        width: 40px;
+        height: 40px;
+    }
+    .modalWrap .window{
+        font-size: 2.5em;
+    }
+    .uiText{
+        font-size: 2em;
+    }
+    .sliderBar .Bar{
+        width: 10px;
+    }
+    header .toggleBtn{
+        width: 45px;
+        height: 45px;
+    }
+    header .toggleBtn span{
+        height: 8px;
+    }
+}
+@media screen and (max-width: 2000px) {
+    .uiText{
+        font-size: 1.7em;
+    }
+    .modalWrap .window{
+        font-size: 1.7em;
+    }
+    footer .footerBtn{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .sliderBar .Bar{
+        width: 8px;
+    }
+    header .toggleBtn{
+        width: 35px;
+        height: 35px;
+    }
+    header .toggleBtn span{
+        height: 5px;
+    }
+    nav ul li{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .uiText{
+        font-size: 1.5em;
+    }
+    footer .footerBtn{
+        width: 25px;
+        height: 25px;
+    }
+    .sliderBar .Bar{
+        width: 8px;
+    }
+    header .toggleBtn{
+        width: 30px;
+        height: 30px;
+    }
+    nav ul li{
+        font-size: 1.7em;
+    }
+    footer{
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .modalWrap .window{
+        font-size: 1.2em;
+    }
+    .modalWrap .window .btnBox{
+        margin-top: 20px;
+    }
+    .modalWrap .window .btnBox .modalBtn{
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .uiText{
+        font-size: 1.2em;
+    }
+    footer .footerBtn{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+   
+    header .toggleBtn{
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .sliderBar{
+        margin: 15px 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    footer{
+        display: none !important;
+        height: 0;
+    }
+    .modalWrap .window{
+        width: 60%;
+    }
+    .modalWrap{
+        position: fixed;
+    }
+    body{
+        overflow: auto;
+        height:100%!important;
+        padding-bottom: 0 ;
+    }
+    html{
+        height: 100%;
+    }
+    .mobUi{
+        opacity: 1;
+    }
+    .preview{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+    }
+    .uiControls{
+        position: static;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .modalWrap .window{
+        width: 90%;
+    }
+}

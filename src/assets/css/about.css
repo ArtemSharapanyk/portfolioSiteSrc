@@ -1,0 +1,28 @@
+.contentSlider .about .title{
+    margin-bottom: 0;
+}
+.contentSlider .about .description{
+    width: 70%;
+    height: 100%;
+}
+.contentSlider .about .description p{
+    margin: 4% 0;
+    line-height: 1.4em;
+
+}
+
+.contentSlider .about .description p:last-child{
+    margin: 0;
+}
+.contentSlider .about .photo{
+    width: 30%;
+    height: 90%;
+    opacity: .4;
+}
+.contentSlider .about .photo.animateEl{
+    opacity: 0 !important;
+}
+.about .content{
+    display: flex;
+    align-items: center;
+}

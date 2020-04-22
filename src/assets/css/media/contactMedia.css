@@ -1,0 +1,41 @@
+@media screen and (max-width: 4000px) {
+    .contact .socialBox li{
+        width: 100px;
+        height: 100px;
+    }
+    .contact h2{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 3500px) {
+    .contact .socialBox li{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 2800px) {
+    .contact .socialBox li{
+        width: 65px;
+        height: 65px;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .contact .title{
+        margin-top: 20px !important;
+    }
+    .contact .socialBox li{
+        width: 40px;
+        height: 40px;
+    }
+    .contact h2{
+        font-size: .9em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contact .socialBox {
+       width: 90%;
+    }
+    .contact .description{
+        width: 100%;
+    }
+}
