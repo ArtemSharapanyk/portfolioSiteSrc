@@ -138,9 +138,9 @@
 }
 .calculatorOfPrice .miniBlock input[type="text"]{
     width: 80px;
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
-    border-bottom: 1px solid #a4a3a5;
+    border-bottom: 1px solid #a4a3a5 !important;
     font-size: .7em;
     color: #a4a3a5;
 }

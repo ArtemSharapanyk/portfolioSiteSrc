@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="/assets/img/icon.ico" type="image/x-icon">
     <title>Portfolio| Hasker</title>
     <style>
       .loader{
@@ -275,7 +276,7 @@
         <li class="animateEl"><a>навыки.</a></li>
         <li class="animateEl"><a>контакты.</a></li>
         <li class="animateEl"><a>цена.</a></li>
-        <li class="animateEl"><a rel="noreferrer" href="https://sharapanykartemportfolio.github.io/" target="_blank">портфолио.</a></li>
+        <li class="animateEl"><a rel="noreferrer" href="https://portfolioartemsharapanyk.github.io/" target="_blank">портфолио.</a></li>
       </ul>
     </nav>
    
@@ -303,7 +304,6 @@
                 Перед вами перспективный фронтенд разработчик, с большими целями, к которым он медленно, но уверенно идёт.Мое желание быть лучшим не позволяет выполнять работу халатно, что позволяет вам не иметь лишних проблем с дальнейшей поддержкой проекта и самим качеством исполнения.
             </p>
           </div>
-          <div class="photo" style="background: url('/assets/img/forportfolio.png') center top; background-size: cover;"></div>
         </div>  
       </div>
       <div class="slide skills" id="skills">
@@ -339,7 +339,7 @@
               </div>
             </div>
             <div class="description">
-              Другие <span>технологии</span>,которые я использую.
+              Другие <span class="anotherBtn">технологии</span>,которые я использую.
             </div>
           </div>
         </div> 
@@ -357,7 +357,7 @@
           <div class="wrap">
             <ul class="socialBox">
               <li class="socialItems instagram">
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/_chiza777/"></a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/_m_isterio/"></a>
               </li>
               <li class="socialItems telegram">
                 <a target="_blank" rel="noreferrer" href="https://t.me/ArtemSharapanykWeb"></a>
@@ -366,7 +366,7 @@
                 <a target="_blank" rel="noreferrer" href="https://github.com/ArtemSharapanyk"></a>
               </li>
               <li class="socialItems linkedIn">
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/artemsharapanyk"></a>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/%D0%B0%D1%80%D1%82%D0%B5%D0%BC-%D1%88%D0%B0%D1%80%D0%B0%D0%BF%D0%B0%D0%BD%D1%8E%D0%BA-2188651ab/"></a>
               </li>
             </ul>
             <h2><a href="tel:+380973804996">скажи привет 👋</a></h2>
@@ -394,7 +394,7 @@
         <div class="text animateEl">
             Цена подобрана исключительно приблизительно, основываясь на среднюю сложность элементов страницы, только осмотрев реальный макет, я могу сказать реальную цену и сроки.
         </div>
-        <div class="calcBtnControl animateEl">
+        <div class="calcBtnControl animateEl previewBtn">
           Понимаю
         </div>
       </div>
@@ -403,7 +403,7 @@
           <option value="none">Тип сайта</option>
           <option value="landing">Landing page</option>
           <option value="wpSite">Wordpress website(blog/shop)</option>
-          <option value="multiple">Multiple pages website</option>
+          <option value="multipleSite">Multiple pages website</option>
         </select>
         <div class="calcBtnControl animateEl">
           Вперед
@@ -561,6 +561,50 @@
           Вперед
         </div>
       </div>
+      <div class="flex wpSiteSlide">
+        <div class="block animateEl">
+          <div class="question">
+            Блог или магазин
+          </div>
+          <div class="miniBlock radioBlock">
+            <div class="blockWrap flex">
+              <input type="radio" id="shopSite" name="shopSite" value="0">
+              <div class="radio"></div>
+              <label for="shopSite">магазин</label>
+            </div>
+            <div class="blockWrap flex ml">
+              <input type="radio" id="BlogSite" name="shopSite" value="15">
+              <div class="radio"></div>
+              <label for="BlogSite">блог</label>
+            </div>
+          </div>
+        </div>
+        <div class="calcBtnControl animateEl">
+          Вперед
+        </div>
+      </div>
+      <div class="flex multipleSiteSlide ">
+        <div class="block animateEl">
+          <div class="question">
+            Больше чем 10 страниц
+          </div>
+          <div class="miniBlock radioBlock">
+            <div class="blockWrap flex">
+              <input type="radio" id="pagesLess" name="pages" value="0">
+              <div class="radio"></div>
+              <label for="pagesLess">меньше</label>
+            </div>
+            <div class="blockWrap flex ml">
+              <input type="radio" id="pagesMore" name="pages" value="15">
+              <div class="radio"></div>
+              <label for="pagesMore">больше</label>
+            </div>
+          </div>
+        </div>
+        <div class="calcBtnControl animateEl">
+          Вперед
+        </div>
+      </div>
       <div class="finally calcSlide">
         <div class="text animateEl">
             Я составляю цену исключительно от  элементов, которые вы хотите видеть на вашей странице.
@@ -573,7 +617,7 @@
         <h2 class="animateEl"></h2>
         <div class="priceCounter animateEl">
         </div>
-        <div class="calcBtnControl animateEl">
+        <div class="calcBtnControl makeOrder animateEl">
           <a href="https://t.me/ArtemSharapanykWeb">
             Зделать заказ
           </a>
@@ -593,6 +637,36 @@
         04
       </div>
     </div>
+    <div class="anotherModal">
+      <div class="wrapper">
+        <div class="titleAn animateEl">
+          Другие технологии
+        </div>
+        <div class="boxOfSkills">
+          <div class="skillsItems grey animateEl">
+            Webpack
+          </div>
+          <div class="skillsItems black animateEl">
+            React
+          </div>
+          <div class="skillsItems grey animateEl">
+            Gulp
+          </div>
+          <div class="skillsItems black animateEl">
+            Wordpress
+          </div>
+          <div class="skillsItems grey animateEl">
+            Sass
+          </div>
+          <div class="skillsItems black animateEl">
+            Vue
+          </div>
+        </div>
+        <div class="returnBtnAnother animateEl">
+          Назад
+        </div>
+      </div>
+  </div>
     <div class="tabWrap">
       <div class="tab">
         Я использую это для создания структуры сайта.

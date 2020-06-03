@@ -1,4 +1,4 @@
-let addMenu = (Menu, menuBtn, menuItems, slides, activeMenuClass, toggleBtnClass) => {
+export default (Menu, menuBtn, menuItems, slides, activeMenuClass, toggleBtnClass) => {
     let gsap     = require("gsap/dist/gsap").gsap;
     
     let tl                = gsap.timeline({paused: true});
@@ -62,16 +62,15 @@ let addMenu = (Menu, menuBtn, menuItems, slides, activeMenuClass, toggleBtnClass
         for(let anchor of anchors) {
             anchor.addEventListener('click', (e) => {
                 e.preventDefault();
-                setTimeout(() => {
+
                     let IdOfBlock = anchor.getAttribute('href');
                     document.querySelector(`${IdOfBlock}`).scrollIntoView({
-                        behavior: 'smooth',
+                        behavior: 'auto',
                         block: 'start'
                     });
-                }, 2000);
+               
             });
         }
     }    
 };
 
-module.exports = addMenu;

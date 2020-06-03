@@ -20,6 +20,9 @@
     .uiText{
         font-size: 3em;
     }
+    .anotherModal{
+        font-size: 5em;
+    }
     footer .footerBtn{
         width: 70px;
         height: 70px;
@@ -38,6 +41,9 @@
     .uiText{
         font-size: 2.5em;
     }
+    .anotherModal{
+        font-size: 3.8em;
+    }
     footer .footerBtn{
         width: 60px;
         height: 60px;
@@ -54,6 +60,17 @@
     header .toggleBtn{
         width: 60px;
         height: 60px;
+    }
+}
+@media screen and (max-width: 3000px){
+    .anotherModal .boxOfSkills .skillsItems{
+        padding: 15px 0;
+        padding-left: 15px;
+        margin-top: 20px;
+        font-size: .6em;
+    }
+    .anotherModal .returnBtnAnother{
+        margin-top: 40px;
     }
 }
 @media screen and (max-width: 2600px) {
@@ -78,9 +95,25 @@
         height: 8px;
     }
 }
+@media screen and (max-width: 2400px){
+    .anotherModal{
+        font-size: 3em;
+    }
+}
 @media screen and (max-width: 2000px) {
     .uiText{
         font-size: 1.7em;
+    }
+    .anotherModal .boxOfSkills .skillsItems{
+        padding: 12px 0;
+        padding-left: 12px;
+        margin-top: 15px;
+    }
+    .anotherModal{
+        font-size: 2.8em;
+    }
+    .anotherModal .returnBtnAnother{
+        margin-top: 20px;
     }
     .modalWrap .window{
         font-size: 1.7em;
@@ -130,6 +163,15 @@
     .modalWrap .window{
         font-size: 1.2em;
     }
+    .anotherModal .boxOfSkills {
+        margin-top: 30px;
+    }
+    .anotherModal .boxOfSkills .skillsItems{
+        margin-top: 10px;
+    }
+    .anotherModal{
+        font-size: 2.4em;
+    }
     .modalWrap .window .btnBox{
         margin-top: 20px;
     }
@@ -141,6 +183,15 @@
 @media screen and (max-width: 1400px) {
     .uiText{
         font-size: 1.2em;
+    }
+    .anotherModal .boxOfSkills {
+        margin-top: 20px;
+    }
+    .anotherModal .boxOfSkills .skillsItems{
+        margin-top: 10px;
+    }
+    .anotherModal{
+        font-size: 2em;
     }
     footer .footerBtn{
         width: 20px;
@@ -162,6 +213,9 @@
     footer{
         display: none !important;
         height: 0;
+    }
+    nav{
+       position: fixed !important; 
     }
     .modalWrap .window{
         width: 60%;
@@ -194,4 +248,85 @@
     .modalWrap .window{
         width: 90%;
     }
+}
+
+/* tablate responsive */
+@media screen and (width: 1280px) and (height: 800px) {
+    .uiText{
+        font-size: 1.7em;
+    }
+    footer .footerBtn{
+        width: 30px;
+        height: 30px;
+    }
+    header .toggleBtn{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (width: 1920px) and (height: 1200px) {
+    .uiText{
+        font-size: 2em;
+    }
+    footer .footerBtn{
+        width: 40px;
+        height: 40px;
+    }
+    header .toggleBtn{
+        width: 35px;
+    }  
+}
+@media screen and (width: 2560px) and (height: 1600px) {
+    .uiText{
+        font-size: 2.6em;
+    }
+    footer .footerBtn{
+        width: 55px;
+        height: 55px;
+    }
+    header .toggleBtn{
+        width: 50px;
+    }  
+}
+@media screen and (width: 2048px) and (height: 1536px) {
+    .uiText{
+        font-size: 3em;
+    }
+    footer .footerBtn{
+        width: 65px;
+        height: 65px;
+    }
+    header .toggleBtn{
+        width: 60px;
+    }  
+}
+@media screen and (width: 2732px) and (height: 2048px) {
+    .uiText{
+        font-size: 3.5em;
+    }
+}
+@media screen and (width: 768px) and (height:1024px) {
+    .uiText{
+        font-size: 2em;
+    }
+}
+@media screen and (width: 1024px) and (height:1366px) {
+    .uiText{
+        font-size: 2.2em;
+    }
+}
+@media screen and (width: 1024px) and (height:1366px) {
+    .uiText{
+        font-size: 2.2em;
+    }
+    footer .footerBtn{
+        width: 40px;
+        height: 40px;
+    }
+    header .toggleBtn{
+        width: 35px;
+        height: 35px;
+    }
+    
 }

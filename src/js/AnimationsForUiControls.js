@@ -1,4 +1,4 @@
-let startAn = (animateClass, sliderBar, sliderWhiteLine, activeIndex, allCounter) => {
+export default (animateClass, sliderBar, sliderWhiteLine, activeIndex, allCounter) => {
     let gsap     = require("gsap/dist/gsap").gsap;
     let timeline = gsap.timeline(); 
     let barHeight;
@@ -56,5 +56,7 @@ let startAn = (animateClass, sliderBar, sliderWhiteLine, activeIndex, allCounter
         duration:.3 
     },  '-=.4');
 };
+    
 
-module.exports = startAn;
+
+

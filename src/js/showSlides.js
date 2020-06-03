@@ -1,4 +1,4 @@
-let changeSlide = (slide, activeClass, topBtn, bottomBtn, sliderWhiteLine, slideIndexBar, noActiveBtn, activeSlideChild) => {
+export default (slide, activeClass, topBtn, bottomBtn, sliderWhiteLine, slideIndexBar, noActiveBtn, activeSlideChild) => {
     let gsap             = require("gsap/dist/gsap").gsap;
     let slides           = document.querySelectorAll(slide);
     let slideIndex       = 0;
@@ -146,11 +146,8 @@ let changeSlide = (slide, activeClass, topBtn, bottomBtn, sliderWhiteLine, slide
             });
 
         });
-    }
-
-    
+    }       
 };    
 
 
 
-module.exports = changeSlide;

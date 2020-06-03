@@ -1,4 +1,4 @@
-let hideTypeWriter = (typeWriter, prev, btn, hiddenClassTypeWriter, hiddenPreviewClass, activePreviwBtn) => {
+export default (typeWriter, prev, btn, hiddenClassTypeWriter, hiddenPreviewClass, activePreviwBtn) => {
     let typewriter = document.querySelector(typeWriter);
     let preview    = document.querySelector(prev);
 
@@ -43,5 +43,3 @@ let hideTypeWriter = (typeWriter, prev, btn, hiddenClassTypeWriter, hiddenPrevie
         }
     });
 };
-
-module.exports = hideTypeWriter;

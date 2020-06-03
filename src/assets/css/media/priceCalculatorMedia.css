@@ -143,3 +143,86 @@
         width: 100% !important;
     }
 }
+
+/* tablate responsive */
+@media screen and (width: 1280px) and (height: 800px) {
+    .calculatorOfPrice .previewBtn{
+        width: 250px !important;
+        height: 60px !important;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 150px;
+        height: 50px;
+    }
+    .calculatorOfPrice{
+        font-size: 1.7em;
+    }
+    .makeOrder{
+        width: 175px !important;
+    }
+}
+@media screen and (width: 1920px) and (height: 1200px) {
+    .calculatorOfPrice .previewBtn{
+        width: 270px !important;
+        height: 75px !important;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 160px;
+        height: 52px;
+    }
+    .calculatorOfPrice{
+        font-size: 2em;
+    }
+    .makeOrder{
+        width: 210px !important;
+    }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+    .calculatorOfPrice .previewBtn{
+        width: 280px !important;
+        height: 70px !important;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 170px;
+        height: 62px;
+    }
+    .calculatorOfPrice{
+        font-size: 2em;
+    }
+    .makeOrder{
+        width: 260px !important;
+    }
+}
+@media screen and (width: 768px) and (height:1024px) {
+    .calculatorOfPrice .previewBtn{
+        width: 280px !important;
+        height: 70px !important;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 170px;
+        height: 62px;
+    }
+    .calculatorOfPrice{
+        font-size: 2em;
+    }
+    .makeOrder{
+        width: 260px !important;
+    }
+}
+@media screen and (width: 1024px) and (height:1366px) {
+    .calculatorOfPrice .previewBtn{
+        width: 280px !important;
+        height: 70px !important;
+    }
+    .calculatorOfPrice .calcBtnControl{
+        width: 170px;
+        height: 62px;
+    }
+    .calculatorOfPrice{
+        font-size: 2em;
+    }
+    .makeOrder{
+        width: 260px !important;
+    }
+}
+

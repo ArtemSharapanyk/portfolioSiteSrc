@@ -1,4 +1,4 @@
-let addPriceCalculatorLogic = (startBtn, slideBtn, slide, slider, activeSlideClass, activeSlideChilds, select, priceElements, priceIndex, scoreBtn ) => {
+export default (startBtn, slideBtn, slide, slider, activeSlideClass, activeSlideChilds, select, priceElements, priceIndex, scoreBtn ) => {
     let startCalcBtn        = document.querySelector(startBtn);
     let slideBtnMove        = document.querySelectorAll(slideBtn);
     let sliderCalc          = document.querySelector(slider);
@@ -96,6 +96,20 @@ let addPriceCalculatorLogic = (startBtn, slideBtn, slide, slider, activeSlideCla
                 document.querySelector(`.${value}Slide`).classList.add(slide);
             }
 
+            //set price to types of websites 
+
+            if(value === 'landing'){
+                dataOfPrice.landing = 10
+            }
+            
+            if(value === 'wpSite'){
+                dataOfPrice.wpSite  = 20 
+            }
+            
+            if(value === 'multipleSite'){
+                dataOfPrice.multiple = 15
+            }
+
             // change data of price object
             optionValue.forEach(item => {
                 if(item.value === value){
@@ -123,6 +137,10 @@ let addPriceCalculatorLogic = (startBtn, slideBtn, slide, slider, activeSlideCla
                 dataOfPrice.sections = 5
             }
         }
+
+        //set price to types of sites
+
+
     };
 
     startCalcBtn.addEventListener('click', () => {
@@ -149,8 +167,7 @@ let addPriceCalculatorLogic = (startBtn, slideBtn, slide, slider, activeSlideCla
         showPrice: function() {
             let SelectValue  = document.querySelector('.calcSlide h2');
             let priceCounter = document.querySelector(priceIndex);
-
-
+            
             let priceValue = this.elemetsOfWebsite.reduce((sum, item) => {
                 if(item.checked){
                     return sum + dataOfPrice[item.getAttribute('id')] 
@@ -162,7 +179,7 @@ let addPriceCalculatorLogic = (startBtn, slideBtn, slide, slider, activeSlideCla
 
 
             SelectValue.innerHTML  = this.selectValue;
-            priceCounter.innerHTML = priceValue + this.sections + '$';
+            priceCounter.innerHTML = (priceValue + this.multiple + this.wpSite + this.landing) + this.sections + '$';
         },
         navigation: 5,
         form: 5,
@@ -182,6 +199,13 @@ let addPriceCalculatorLogic = (startBtn, slideBtn, slide, slider, activeSlideCla
         radioScreenOptNo: 0,
         normalDesign: 0,
         SliderSiteDesign: 15,
+        shopSite: 25,
+        BlogSite: 15,
+        pagesLess: 0,
+        pagesMore: 15,
+        landing: 0,
+        wpSite: 0,
+        multiple: 0 
     };
 
     let scorePriceBtn = document.querySelector(scoreBtn);
@@ -189,9 +213,7 @@ let addPriceCalculatorLogic = (startBtn, slideBtn, slide, slider, activeSlideCla
     scorePriceBtn.addEventListener('click', () => {
         dataOfPrice.showPrice();
     })
+
+    setInterval(() => console.log(dataOfPrice), 10000)
     
-
-
 };
-
-module.exports = addPriceCalculatorLogic;

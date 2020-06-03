@@ -1,4 +1,4 @@
-let showModal = (modal, wrapOfModal, btn, btnChangeLang) => {
+export default (modal, wrapOfModal, btn, btnChangeLang) => {
     let modalW    = document.querySelector(modal);
     let wrap      = document.querySelector(wrapOfModal);
     let gsap      = require("gsap/dist/gsap").gsap;
@@ -28,5 +28,3 @@ let showModal = (modal, wrapOfModal, btn, btnChangeLang) => {
         localStorage.setItem('modal', true)
     });
 };
-
-module.exports = showModal;

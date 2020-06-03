@@ -1,4 +1,4 @@
-let showSkillsTab = (els, tabs) => {
+export default (els, tabs) => {
     let gsap     = require("gsap/dist/gsap").gsap;
 
     let clickedEls = document.querySelectorAll(els);
@@ -49,8 +49,4 @@ let showSkillsTab = (els, tabs) => {
         });
     }
   
-
-    
 };
-
-module.exports = showSkillsTab;

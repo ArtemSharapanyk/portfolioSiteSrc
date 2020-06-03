@@ -1,3 +1,5 @@
+//css import
+
 import './assets/css/main.css';
 import './assets/css/media/mainUiMedia.css';
 import './assets/css/media/sliderMedia.css';
@@ -19,16 +21,18 @@ import './assets/css/media/priceMedia.css';
 import './assets/css/priceCalculator.css';
 import './assets/css/media/priceCalculatorMedia.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-    let showUiControls = require('./js/AnimationsForUiControls');
-    let loaderAdd      = require('./js/loader'); 
-    let slideLogic     = require('./js/showSlides');
-    let menu           = require('./js/menu');
-    let skillsTabShow  = require('./js/skillsTabs');
-    let typewriter     = require('./js/hideTypewriter');
-    let priceCalc      = require('./js/priceCalculator');
-    let modalShow      = require('./js/modalWindow');
+//js import
+import anotherModal   from './js/anotherModal';
+import showUiControls from './js/AnimationsForUiControls';
+import loaderAdd      from './js/loader';
+import slideLogic     from './js/showSlides';
+import menu           from './js/menu';
+import skillsTabShow  from './js/skillsTabs';
+import typewriter     from './js/hideTypewriter';
+import priceCalc      from './js/priceCalculator';
+import modalShow      from './js/modalWindow';
 
+document.addEventListener('DOMContentLoaded', () => {
     new Promise((resolve, reject) => {
         loaderAdd('.loader', 'hideLoader');
         resolve();
@@ -64,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             skillsTabShow('.circle', '.tab');
-            priceCalc('.btnCalc', '.calcBtnControl', 'calcSlide', '.calculatorOfPrice', 'activeCalcSlide', 'activeSlideChild','.typeOfSite','#navigation,#form,#sections,#sliders,#poup,#tabs,#radioResponse,#radioResponseNo,#radioMobile,#radioDesktop,#radioScreenOpt,#radioScreenOptNo,#animationPageOnScroll,#animationPageLoad,#animationHoverClick,#normalDesign,#SliderSiteDesign,#accordions', '.priceCounter', '.scorePrice');
+            priceCalc('.btnCalc', '.calcBtnControl', 'calcSlide', '.calculatorOfPrice', 'activeCalcSlide', 'activeSlideChild','.typeOfSite','#navigation,#form,#sections,#sliders,#poup,#tabs,#radioResponse,#radioResponseNo,#radioMobile,#radioDesktop,#radioScreenOpt,#radioScreenOptNo,#animationPageOnScroll,#animationPageLoad,#animationHoverClick,#normalDesign,#SliderSiteDesign,#accordions,#BlogSite,#shopSite,#pagesLess,#pagesMore', '.priceCounter', '.scorePrice');
+            anotherModal('.anotherBtn', '.anotherModal', '.titleAn', '.skillsItems', '.returnBtnAnother');
         });
     });
 });
